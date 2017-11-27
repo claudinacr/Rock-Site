@@ -1,6 +1,7 @@
 html,
 body,
-h2 {
+h2,
+p {
     margin: 0;
     padding: 0;
 }
@@ -30,7 +31,8 @@ body {
     width: 100%;
 }
 
-h2 {
+h2,
+p {
     text-align: center;
 }
 
