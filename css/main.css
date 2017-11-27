@@ -1,0 +1,42 @@
+.tres-columnas {
+    background-color: #34383F;
+    color: white;
+    width: 100%;
+    margin-top: 0;
+}
+
+.tres-columnas .columna {
+    background-color: #34383F;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    margin-top: -10%;
+}
+
+.total {
+    width: 100%;
+    margin-top: 0;
+}
+
+.imagen .columna {
+    background-image: url("../assets/images/header.jpg");
+    width: 100%;
+    height: 40em;
+    margin-top: -10%;
+    background-size: cover;
+}
+
+.dos-columnas .columna {
+    background-color: white;
+}
+
+footer .total .columna {
+    background-color: #34383F;
+}

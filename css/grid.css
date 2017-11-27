@@ -1,0 +1,111 @@
+html,
+body,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FAFAFA;
+    font-family: sans-serif;
+    color: #555;
+}
+
+.fila {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    background: #FFFFFF;
+}
+
+.columna {
+    float: left;
+    background-color: lightgreen;
+    margin-right: 2%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.total .columna {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+/*DOS COLUMNAS*/
+
+.dos-columnas .columna {
+    width: 49%;
+}
+
+.dos-columnas .columna:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+/* CUATRO COLUMNAS*/
+
+.cuatro-columnas .columna {
+    width: 23.5%;
+}
+
+.cuatro-columnas .columna:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+/* TRES COLUMNAS*/
+
+.tres-columnas .columna {
+    width: 32%;
+}
+
+.tres-columnas .columna:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+/* SEIS COLUMNAS*/
+
+.seis-columnas .columna {
+    width: 15%;
+}
+
+.seis-columnas .columna:nth-child(6n) {
+    margin-right: 0;
+}
+
+
+/* DOCE COLUMNAS*/
+
+.doce-columnas .columna {
+    width: 6.5%;
+}
+
+.doce-columnas .columna:nth-child(12n) {
+    margin-right: 0;
+}
+
+
+/*RIGHT Y LEFT SIDEBAR*/
+
+.right-sidebar .sidebar,
+.left-sidebar .sidebar {
+    width: 23.5%;
+}
+
+.right-sidebar .content,
+.left-sidebar .content {
+    width: 74.5%;
+}
+
+.right-sidebar .sidebar {
+    margin-right: 0;
+}
+
+.left-sidebar .content {
+    margin-right: 0;
+}
