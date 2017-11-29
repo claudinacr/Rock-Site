@@ -87,3 +87,7 @@ i {
     padding: 0.1em;
     border-radius: 5%;
 }
+
+i.fa-bars {
+    margin-left: 7.5em;
+}
