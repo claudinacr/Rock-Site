@@ -1,7 +1,6 @@
 html,
 body,
-h2,
-p {
+h2 {
     margin: 0;
     padding: 0;
 }
@@ -12,102 +11,156 @@ body {
     color: #555;
 }
 
-.fila {
+.fila2 {
     overflow: hidden;
     width: 100%;
-    margin: auto;
-    background: #FFFFFF;
+    margin: 0em auto;
+    /* background: #FFFFFF; */
+}
+
+.fila {
+    overflow: hidden;
+    width: 90%;
+    margin: 1em auto;
+    /* background: #FFFFFF; */
 }
 
 .columna {
     float: left;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     margin-right: 2%;
     padding: 1em;
     box-sizing: border-box;
-}
-
-.total .columna {
     width: 100%;
 }
 
-h2,
-p {
+h2 {
     text-align: center;
 }
 
-
-/*DOS COLUMNAS*/
-
-.dos-columnas .columna {
-    width: 49%;
+@media (min-width:0px) and (min-width:480px) {
+    /* 4 Columnas y seis columnas son dos en Small*/
+    .cuatro-columnas .columna,
+    .seis-columnas .columna,
+    {
+        width: 49%;
+    }
+    .cuatro-columnas .columna:nth-child(2n),
+    .seis-columnas .columna:nth-child(2n) {
+        margin-right: 0;
+    }
+    .doce-columnas .columna {
+        width: 32%;
+    }
+    .doce-columnas .columna:nth-child(3n) {
+        margin-right: 0;
+    }
+    .iconoMenu {
+        display: none;
+    }
+    .tres-columnas .columna {
+        width: 32%;
+    }
+    .tres-columnas .columna:nth-child(3n) {
+        margin-right: 0;
+    }
 }
 
-.dos-columnas .columna:nth-child(2n) {
-    margin-right: 0;
+@media(min-width:768px) {
+    /*RIGHT Y LEFT SIDEBAR*/
+    .right-sidebar .sidebar,
+    .left-sidebar .sidebar {
+        width: 23.5%;
+    }
+    .right-sidebar .content,
+    .left-sidebar .content {
+        width: 74.5%;
+    }
+    .right-sidebar .sidebar {
+        margin-right: 0;
+    }
+    .left-sidebar .content {
+        margin-right: 0;
+    }
+    /* TRES COLUMNAS*/
+    /* SEIS COLUMNAS*/
+    .seis-columnas .columna {
+        width: 15%;
+    }
+    .seis-columnas .columna:nth-child(2n) {
+        margin-right: 2%;
+    }
+    .seis-columnas .columna:nth-child(6n) {
+        margin-right: 0%;
+    }
+    .doce-columnas .columna {
+        width: 23.5%;
+    }
+    .doce-columnas .columna:nth-child(3n) {
+        margin-right: 2%;
+    }
+    .doce-columnas .columna:nth-child(4n) {
+        margin-right: 0;
+    }
+    .iconoMenu {
+        display: none;
+    }
 }
 
-
-/* CUATRO COLUMNAS*/
-
-.cuatro-columnas .columna {
-    width: 23.5%;
+@media(min-width:1024px) {
+    /*DOS COLUMNAS*/
+    .dos-columnas .columna {
+        width: 49%;
+    }
+    .dos-columnas .columna:nth-child(2n) {
+        margin-right: 0;
+    }
+    /* CUATRO COLUMNAS*/
+    .cuatro-columnas .columna {
+        width: 23.5%;
+    }
+    .cuatro-columnas .columna:nth-child(2n) {
+        margin-right: 2%;
+    }
+    .cuatro-columnas .columna:nth-child(4n) {
+        margin-right: 0;
+    }
+    /* SEIS COLUMNAS*/
+    .seis-columnas .columna {
+        width: 15%;
+    }
+    .seis-columnas .columna:nth-child(6n) {
+        margin-right: 0;
+    }
+    /* DOCE COLUMNAS*/
+    .doce-columnas .columna {
+        width: 6.5%;
+    }
+    .doce-columnas .columna:nth-child(12n) {
+        margin-right: 0;
+    }
+    .doce-columnas .columna:nth-child(4n) {
+        margin-right: 2%;
+    }
+    .menu-derecho {
+        visibility: visible;
+    }
+    .iconoMenu {
+        display: none;
+    }
+    .tres-columnas .columna {
+        width: 32%;
+    }
+    .tres-columnas .columna:nth-child(3n) {
+        margin-right: 0;
+    }
 }
 
-.cuatro-columnas .columna:nth-child(4n) {
-    margin-right: 0;
-}
-
-
-/* TRES COLUMNAS*/
-
-.tres-columnas .columna {
-    width: 32%;
-}
-
-.tres-columnas .columna:nth-child(3n) {
-    margin-right: 0;
-}
-
-
-/* SEIS COLUMNAS*/
-
-.seis-columnas .columna {
-    width: 15%;
-}
-
-.seis-columnas .columna:nth-child(6n) {
-    margin-right: 0;
-}
-
-
-/* DOCE COLUMNAS*/
-
-.doce-columnas .columna {
-    width: 6.5%;
-}
-
-.doce-columnas .columna:nth-child(12n) {
-    margin-right: 0;
-}
-
-
-/*RIGHT Y LEFT SIDEBAR*/
-
-.right-sidebar .sidebar,
-.left-sidebar .sidebar {
-    width: 23.5%;
-}
-
-.right-sidebar .content,
-.left-sidebar .content {
-    width: 74.5%;
-}
-
-.right-sidebar .sidebar {
-    margin-right: 0;
-}
-
-.left-sidebar .content {
-    margin-right: 0;
+@media (min-width:0px) and (max-width: 800px) {
+    .menu-derecho {
+        visibility: hidden;
+    }
+    .iconoMenu {
+        visibility: visible;
+    }
 }
